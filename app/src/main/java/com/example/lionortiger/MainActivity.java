@@ -52,7 +52,15 @@ public class MainActivity extends AppCompatActivity {
             if (playerChoices[winnerColums[0]] == playerChoices[winnerColums[1]]
                     && playerChoices[winnerColums[1]] == playerChoices[winnerColums[2]]
                     && playerChoices[winnerColums[0]]!= Player.NONE) {
-                Toast.makeText(this, "We have a winner", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "We have a winner", Toast.LENGTH_SHORT).show();
+                String winner = " ";
+                if (currentPlayer == Player.ONE) {
+                    winner = "Player One";
+                }
+                else if (currentPlayer == Player.TWO) {
+                    winner = "Player Two" ;
+                }
+                Toast.makeText(this, winner+"", Toast.LENGTH_SHORT).show();
             }
         }
     }
