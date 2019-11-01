@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     Player currentPlayer = Player.ONE;
+    Player[] playerChoices =new Player[9];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         ImageView tappedImageView = (ImageView) view;
 
         tappedImageView.setTranslationX(-2000);
+        int tiTag = Integer.parseInt(tappedImageView.getTag().toString());
+        playerChoices[tiTag]= currentPlayer;
         if (currentPlayer==Player.ONE) {
             tappedImageView.setImageResource(R.drawable.lion);
             currentPlayer = Player.TWO;
