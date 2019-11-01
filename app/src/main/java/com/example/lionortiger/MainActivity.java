@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     enum Player {
-        ONE, TWO;
+        ONE, TWO, NONE;
     }
 
     Player currentPlayer = Player.ONE;
@@ -18,10 +18,16 @@ public class MainActivity extends AppCompatActivity {
     int [][] winnerRowColumns = {{0,1,2},{3,4,5},{6,7,8},{0,3,6},
             {1,4,7},{2,5,8},{0,4,8},{2,4,6}};
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        for (int i=0; i<9; i++) {
+            playerChoices[i] = Player.NONE;
+        }
     }
 
     public void imageViewIsClicked (View view) {
@@ -42,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
 
         tappedImageView.animate().translationXBy(2000).alpha(1).rotation(3600).setDuration(500);
         Toast.makeText(this,tappedImageView.getTag().toString(), Toast.LENGTH_SHORT).show();
+        for ( int[] winnerColums : winnerRowColumns) {
+            if (playerChoices[winnerColums[0]] == playerChoices[winnerColums[1]]
+                    && playerChoices[winnerColums[1]] == playerChoices[winnerColums[2]]
+                    && playerChoices[winnerColums[0]]!= Player.NONE) {
+                Toast.makeText(this, "We have a winner", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
 }
