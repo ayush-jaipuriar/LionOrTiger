@@ -24,7 +24,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
 
@@ -33,7 +33,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
 
@@ -42,7 +42,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
 
@@ -51,7 +51,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
 
@@ -60,7 +60,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
 
@@ -69,7 +69,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
 
@@ -78,7 +78,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
 
@@ -87,7 +87,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
 
@@ -96,7 +96,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="@android:color/black"
             android:onClick="imageViewIsClicked" />
     </androidx.gridlayout.widget.GridLayout>
