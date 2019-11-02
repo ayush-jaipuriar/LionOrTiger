@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_purple"
+    android:background="@android:color/holo_orange_dark"
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_dark"
+        android:background="@android:color/holo_green_light"
         app:columnCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,8 +24,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="0" />
 
@@ -34,8 +34,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="1" />
 
@@ -44,8 +44,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="2" />
 
@@ -54,8 +54,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="3" />
 
@@ -64,8 +64,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="4" />
 
@@ -74,8 +74,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="5" />
 
@@ -84,8 +84,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="6" />
 
@@ -94,8 +94,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="7" />
 
@@ -104,8 +104,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
 
-            android:alpha="0.2"
-            android:background="@android:color/black"
+            android:alpha="0.3"
+            android:background="@android:color/holo_blue_light"
             android:onClick="imageViewIsClicked"
             android:tag="8" />
     </androidx.gridlayout.widget.GridLayout>
@@ -116,11 +116,29 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Lion or Tiger"
-        android:textSize="24sp"
+        android:textSize="36sp"
+        app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:autoText="false"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
